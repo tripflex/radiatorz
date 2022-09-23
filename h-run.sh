@@ -18,6 +18,7 @@ while true; do
 		break
 done
 
+echo -e "${GREEN}Attempting to set memory clocks at 810...${NOCOLOR}"
 nvidia-smi -lmc 810
 
 CUSTOM_LOG_BASEDIR=`dirname "$CUSTOM_LOG_BASENAME"`
