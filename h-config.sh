@@ -5,4 +5,3 @@ conf=" -a rad -o $CUSTOM_URL -u $CUSTOM_TEMPLATE"
 
 echo "$conf"
 echo "$conf" > $CUSTOM_CONFIG_FILENAME
-

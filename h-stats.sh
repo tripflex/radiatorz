@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ccminer implementation from https://github.com/minershive/hiveos-linux/tree/master/hive/miners/ccminer
 
-. /hive/miners/custom/radiator/h-manifest.conf
+. /hive/miners/custom/radiatorz/h-manifest.conf
 
 threads=`echo "threads" | nc -w 5 localhost ${MINER_API_PORT} | tr -d '\0'` #&& echo $threads
 if [[ $? -ne 0  || -z $threads ]]; then
