@@ -10,6 +10,7 @@
 #try to release TIME_WAIT sockets
 while true; do
 	for con in `netstat -anp | grep TIME_WAIT | grep $MINER_API_PORT | awk '{print $5}'`; do
+		echo -e "${RED}Attempting to release TIME_WAIT sockets for miner, miner should start shortly...${NOCOLOR}"
 		killcx $con lo
 	done
 	netstat -anp | grep TIME_WAIT | grep $MINER_API_PORT &&
