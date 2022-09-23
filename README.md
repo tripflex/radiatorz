@@ -1,5 +1,9 @@
 # Radiator
 
+Fork of https://github.com/radifier/radiator with few tweaks
+- Echo about attempting to release `TIME_WAIT` sockets
+- Automatically try set memory clock at 810 with `nvidia-smi -lmc 810`
+
 Fork of KlausT ccminer with Radiant and Novo support.
 
 Compile:
