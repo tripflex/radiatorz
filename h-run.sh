@@ -19,7 +19,10 @@ while true; do
 done
 
 echo -e "${GREEN}Attempting to set memory clocks at 810...${NOCOLOR}"
+# 3x series cards
 nvidia-smi -lmc 810
+# 2x series cards
+nvtool -setmem 810
 
 CUSTOM_LOG_BASEDIR=`dirname "$CUSTOM_LOG_BASENAME"`
 [[ ! -d $CUSTOM_LOG_BASEDIR ]] && mkdir -p $CUSTOM_LOG_BASEDIR
